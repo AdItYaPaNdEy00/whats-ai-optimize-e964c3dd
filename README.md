@@ -1,73 +1,122 @@
-# Welcome to your Lovable project
+🚀 WhatsApp Campaign Optimizer
 
-## Project info
+A React-based dashboard for managing and analyzing WhatsApp marketing campaigns with A/B testing support.
 
-**URL**: https://lovable.dev/projects/6dc850e4-bbe5-4c62-aed5-83a3336c7e25
+📌 Overview
 
-## How can I edit this code?
+The WhatsApp Campaign Optimizer is a frontend application designed to help marketers:
 
-There are several ways of editing your application.
+Manage campaign workflows
+Test multiple message variants
+Analyze campaign performance through a visual dashboard
 
-**Use Lovable**
+The application focuses on providing a clean interface for campaign tracking, A/B testing, and performance analysis.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6dc850e4-bbe5-4c62-aed5-83a3336c7e25) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+✨ Features
+📢 Campaign Management
+Create and organize marketing campaigns
+Manage multiple message variants
+Track campaign progress
+🧪 A/B Testing Interface
+Compare different message variations
+Visual comparison of performance
+Helps identify better-performing messages
+📊 Analytics Dashboard
+View campaign insights
+Performance metrics visualization
+Clean and intuitive UI
+👥 Customer Management
+Maintain customer data
+Organize users for campaigns
+💬 Message Preview UI
+Preview messages before sending
+WhatsApp-style interface simulation
+⚖️ Compliance View
+Monitor campaign standards
+Ensure structured communication
+🛠️ Tech Stack
+Frontend
+React (TypeScript)
+Vite
+Tailwind CSS
+Component-based architecture
+Tooling
+ESLint
+PostCSS
+whatsapp-campaign-optimizer/
+│
+├── public/
+│   └── favicon.ico / assets
+│
+├── src/
+│   ├── assets/                # Static assets (images, icons)
+│   │
+│   ├── components/            # Reusable UI components
+│   │   ├── Dashboard.tsx
+│   │   ├── CampaignManager.tsx
+│   │   ├── ABTesting.tsx
+│   │   ├── Analytics.tsx
+│   │   ├── CustomerManagement.tsx
+│   │   ├── ChatPreview.tsx
+│   │   ├── Compliance.tsx
+│   │   └── ui/                # Prebuilt UI components (buttons, cards, etc.)
+│   │
+│   ├── pages/                 # Page-level components (routing level)
+│   │   ├── Index.tsx          # Main entry page (dashboard wrapper)
+│   │   └── NotFound.tsx       # 404 page
+│   │
+│   ├── hooks/                 # Custom React hooks
+│   │   └── use-toast.ts       # Toast notification logic
+│   │
+│   ├── lib/                   # Utility libraries/config
+│   │   └── utils.ts           # Helper functions (classNames, etc.)
+│   │
+│   ├── App.tsx                # Root component (routing + layout)
+│   ├── main.tsx               # Entry point (React DOM render)
+│   ├── index.css              # Global styles (Tailwind)
+│   │
+│   └── vite-env.d.ts          # TypeScript environment types
+│
+├── index.html                # Root HTML file
+├── package.json              # Dependencies & scripts
+├── tailwind.config.ts        # Tailwind configuration
+├── postcss.config.js         # PostCSS config
+├── vite.config.ts            # Vite config
+├── tsconfig.json             # TypeScript config
+├── tsconfig.node.json        # Node-specific TS config
+└── eslint.config.js          # Linting rules
+⚙️ Installation & Setup
+1. Clone the repository
+git clone https://github.com/YOUR_USERNAME/whatsapp-campaign-optimizer.git
+cd whatsapp-campaign-optimizer
+2. Install dependencies
+npm install
+3. Run the development server
 npm run dev
-```
+4. Open in browser
+http://localhost:5173/
+🧠 Core Concept
 
-**Edit a file directly in GitHub**
+This project is based on improving marketing effectiveness through:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+A/B testing
+Campaign performance tracking
+Data-driven decision making
 
-**Use GitHub Codespaces**
+It provides a structured way to evaluate which messaging strategies perform better.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🚀 Future Enhancements
+Backend integration (FastAPI / Node.js)
+AI-based optimization (Multi-Armed Bandits)
+Database integration (MongoDB)
+Authentication system
+Real-time analytics
+🤝 Contribution
 
-## What technologies are used for this project?
+Contributions are welcome.
+Feel free to fork and improve the project.
 
-This project is built with:
+📜 License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+MIT License
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6dc850e4-bbe5-4c62-aed5-83a3336c7e25) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
